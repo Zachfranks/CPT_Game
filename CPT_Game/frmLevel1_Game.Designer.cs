@@ -109,7 +109,7 @@
             this.picWall3level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWall3level1.TabIndex = 3;
             this.picWall3level1.TabStop = false;
-            this.picWall3level1.Tag = "Wall";
+            this.picWall3level1.Tag = "wall";
             // 
             // picWall2level1
             // 
@@ -120,7 +120,7 @@
             this.picWall2level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWall2level1.TabIndex = 2;
             this.picWall2level1.TabStop = false;
-            this.picWall2level1.Tag = "Wall";
+            this.picWall2level1.Tag = "wall";
             // 
             // picWall1level1
             // 
@@ -131,7 +131,7 @@
             this.picWall1level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWall1level1.TabIndex = 1;
             this.picWall1level1.TabStop = false;
-            this.picWall1level1.Tag = "Wall";
+            this.picWall1level1.Tag = "wall";
             // 
             // picPacManlevel1
             // 
