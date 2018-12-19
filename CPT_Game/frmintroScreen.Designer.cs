@@ -1,6 +1,6 @@
 ﻿namespace CPT_Game
 {
-    partial class introScreen
+    partial class frmIntroScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -98,7 +98,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "How To Play";
             // 
-            // introScreen
+            // frmIntroScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,8 +109,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "introScreen";
-            this.Text = "Form1";
+            this.Name = "frmIntroScreen";
+            this.Text = "introform";
             this.ResumeLayout(false);
             this.PerformLayout();
 

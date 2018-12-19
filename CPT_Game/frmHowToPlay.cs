@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace CPT_Game
 {
-    public partial class HowToPlay : Form
+    public partial class frmHowToPlay : Form
     {
-        public HowToPlay()
+        public frmHowToPlay()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var form1 = new introScreen())
+            using (var form1 = new frmIntroScreen())
             {
                 //gose to intro
                 Visible = false;

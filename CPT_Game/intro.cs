@@ -16,7 +16,7 @@ namespace CPT_Game
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new introScreen());
+            Application.Run(new frmIntroScreen());
         }
     }
 }

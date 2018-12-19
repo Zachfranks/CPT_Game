@@ -11,12 +11,12 @@ using System.Media;
 
 namespace CPT_Game
 {
-    public partial class splashform : Form
+    public partial class frmSplashform : Form
     {
         //sound play
         private SoundPlayer soundPlayer;
 
-        public splashform()
+        public frmSplashform()
         {
             InitializeComponent();
 

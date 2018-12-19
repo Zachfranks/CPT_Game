@@ -2,12 +2,12 @@ C:\Users\s436432\Desktop\CPT_Game\CPT_Game\bin\Debug\CPT_Game.exe.config
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\bin\Debug\CPT_Game.exe
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\bin\Debug\CPT_Game.pdb
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.csprojResolveAssemblyReference.cache
-C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.HowToPlay.resources
-C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.introScreen.resources
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.Properties.Resources.resources
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.csproj.GenerateResource.Cache
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.csproj.CoreCompileInputs.cache
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.exe
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.pdb
-C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.splashform.resources
-C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.Level1_Game.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmHowToPlay.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmIntroScreen.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmLevel1_Game.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmSplashform.resources

@@ -11,9 +11,9 @@ using System.Threading;
 
 namespace CPT_Game
 {
-    public partial class introScreen : Form
+    public partial class frmIntroScreen : Form
     {
-        public introScreen()
+        public frmIntroScreen()
         {   
             InitializeComponent();
 
@@ -29,12 +29,12 @@ namespace CPT_Game
         public void splashStrat()
         {
             //run the slash screen
-            Application.Run(new splashform());
+            Application.Run(new frmSplashform());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var form1 = new Level1_Game())
+            using (var form1 = new frmLevel1_Game())
             {
                 //gose to new game
                 Visible = false;
@@ -45,7 +45,7 @@ namespace CPT_Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (var form1 = new HowToPlay())
+            using (var form1 = new frmHowToPlay())
             {
                 //gose to how to play
                 Visible = false;

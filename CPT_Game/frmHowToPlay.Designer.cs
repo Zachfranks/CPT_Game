@@ -1,6 +1,6 @@
 ﻿namespace CPT_Game
 {
-    partial class HowToPlay
+    partial class frmHowToPlay
     {
         /// <summary>
         /// Required designer variable.
