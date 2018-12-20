@@ -88,26 +88,29 @@ namespace CPT_Game
 
         private void tmrlevel1_Tick(object sender, EventArgs e)
         {
+            //shows on the scoere bord
+            lblscorelevel1.Text = "Score:" + scorelevel1;
+
             //player movement
             if (goleftlevel1)
             {
-                picPacManlevel1.Left -= speedlevel1;
                 //player moves to the left
+                picPacManlevel1.Left -= speedlevel1;              
             }
             if (gorightlevel1)
             {
-                picPacManlevel1.Left += speedlevel1;
                 //player moves to the right
+                picPacManlevel1.Left += speedlevel1;               
             }
             if (gouplevel1)
             {
-                picPacManlevel1.Top -= speedlevel1;
                 //player moves up
+                picPacManlevel1.Top -= speedlevel1;               
             }
             if (godownlevel1)
             {
-                picPacManlevel1.Top += speedlevel1;
                 //player moves down
+                picPacManlevel1.Top += speedlevel1;               
             }
 
             //moving the ghost and bumping with the walls
@@ -143,7 +146,8 @@ namespace CPT_Game
             //for loop to check walls, ghost and points
             foreach (Control hitBox in this.Controls)
             {
-                if (hitBox is PictureBox && hitBox.Tag == "wall" || hitBox.Tag == "ghost")
+                //if the player hits a "wall" or "ghost"
+                if (hitBox is PictureBox && hitBox.Tag == "wallLevel1" || hitBox.Tag == "ghostLevel1")
                 {
                     // check if the player hits the wall or ghost, then is the game over
                     if(((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds)|| scorelevel1 == 30)
@@ -156,6 +160,16 @@ namespace CPT_Game
 
                         //display game over
                         lblGameOverlevel1.Visible = true;
+                    }
+                }
+
+                //if player hits a "coin"
+                if (hitBox is PictureBox && hitBox.Tag == "coinLevel1")
+                {
+                    if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
+                    {
+                        Controls.Remove(hitBox);
+                        scorelevel1++;
                     }
                 }
             }
