@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.Threading;
 
 namespace CPT_Game
 {
     public partial class frmLevel1_Game : Form
     {
+        private SoundPlayer soundPlayerCoinLevel1;
+        private SoundPlayer soundPlayerGhostLevel1;
+        private SoundPlayer soundPlayerWinLevel1;
+        private SoundPlayer soundPlayerDeathLevel1;
 
         // strat local variables
         bool gouplevel1;
@@ -19,17 +25,22 @@ namespace CPT_Game
         bool goleftlevel1;
         bool gorightlevel1;
 
-        int speedlevel1 = 5;
+        int speedlevel1 = 6;
 
         //ghost 1 and 2 variables
-        int ghost1level1 = 8;
-        int ghost2level1 = 8;
+        int ghost1level1 = 6;
+        int ghost2level1 = 6;
 
         //ghost 3 
-        int ghost3ylevel1 = 8;
-        int ghost3xlevel1 = 8;
+        int ghost3ylevel1 = 5;
+        int ghost3xlevel1 = 5;
 
+        //score borad
         int scorelevel1 = 0;
+
+        //lifecount
+        int life_Count = 0;
+
 
         public frmLevel1_Game()
         {
@@ -144,22 +155,44 @@ namespace CPT_Game
             }
 
             //for loop to check walls, ghost and points
-            foreach (Control hitBox in this.Controls)
+            foreach (Control hitBox in Controls)
             {
                 //if the player hits a "wall" or "ghost"
                 if (hitBox is PictureBox && hitBox.Tag == "wallLevel1" || hitBox.Tag == "ghostLevel1")
                 {
                     // check if the player hits the wall or ghost, then is the game over
                     if(((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds)|| scorelevel1 == 30)
-                    {
-                        //the game over stuff
+                    {                       
+                        //the game over reset
 
+                        life_Count++;
                         //rest the possion
                         picPacManlevel1.Left = 0;
                         picPacManlevel1.Top = 20;
 
-                        //display game over
-                        lblGameOverlevel1.Visible = true;
+
+                        //if the player gets hit by a ghost or wall lose a life
+                        if (life_Count == 1)
+                        {
+                            picLife3Level1.Hide();
+                        }
+                        else if (life_Count == 2)
+                        {
+                            picLife2Level1.Hide();
+                        }
+                        else if (life_Count == 3)
+                        {
+                            //display game over
+                            picLife1Level1.Hide();
+                            lblGameOverlevel1.Visible = true;
+
+                            //pacman cant move
+                            picPacManlevel1.Top = speedlevel1 = 0;
+                            picPacManlevel1.Left = speedlevel1 = 0;
+
+                            //stop the game
+                            tmrlevel1.Stop();
+                        }                      
                     }
                 }
 
@@ -168,11 +201,66 @@ namespace CPT_Game
                 {
                     if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
                     {
+                        //plays the coin sound
+                        soundPlayerCoinLevel1 = new SoundPlayer("pacManCoin.wav");
+                        soundPlayerCoinLevel1.Play();
+
+                        //roemove the coin that was hit
                         Controls.Remove(hitBox);
-                        scorelevel1++;
+
+                        //adds score
+                        scorelevel1++; 
+                        
+                        if(scorelevel1 == 30)
+                        {
+                            //stops the game
+                            tmrlevel1.Stop();
+
+                            MessageBox.Show ("You Beat Level One!!");
+
+                            using (var form1 = new frmIntroScreen())
+                            {
+                                //gose to new game
+                                Visible = false;
+                                form1.ShowDialog();
+                                Close();
+                            }
+                        }
+                    }
+                }
+
+                //displayBoard
+                if (hitBox is PictureBox && hitBox.Tag == "noManLandTopLevel1")
+                {
+                    if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
+                    {
+                        //if pacMan hit no man land go down
+                        picPacManlevel1.Top += speedlevel1;
                     }
                 }
             }
+
+            //making the pink ghost move
+            picPinkGhostlevel1.Left += ghost3xlevel1;
+            picPinkGhostlevel1.Top += ghost3ylevel1;
+
+            //if the ghost hits a wall or the side edege of the form go crazy move other way
+            if (picPinkGhostlevel1.Left < 1 || 
+                picPinkGhostlevel1.Left + picPinkGhostlevel1.Width > ClientSize.Width - 2 ||
+                (picPinkGhostlevel1.Bounds.IntersectsWith(picWall1level1.Bounds))||
+                (picPinkGhostlevel1.Bounds.IntersectsWith(picWall2level1.Bounds))||
+                (picPinkGhostlevel1.Bounds.IntersectsWith(picWall3level1.Bounds))||
+                (picPinkGhostlevel1.Bounds.IntersectsWith(picWall4level1.Bounds))
+                )
+            {
+                ghost3xlevel1 = -ghost3xlevel1;
+            }
+
+            //if the ghost hits the top edege of the form go crazy move other way
+            if (picPinkGhostlevel1.Top < 1 || picPinkGhostlevel1.Top + picPinkGhostlevel1.Height > ClientSize.Height - 2 || (picPinkGhostlevel1.Bounds.IntersectsWith(picDisplayBarLevel1.Bounds)))
+            {
+                ghost3ylevel1 = -ghost3ylevel1;
+            } 
         }
     }
 }
