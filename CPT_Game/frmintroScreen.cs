@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace CPT_Game
 {
     public partial class frmIntroScreen : Form
     {
+
         public frmIntroScreen()
         {   
             InitializeComponent();
@@ -24,6 +26,7 @@ namespace CPT_Game
             //this timer waits 50 seconds entil it auto stops the program
             Thread.Sleep(5000);
             splahscreen.Abort();
+
         }
 
         public void splashStrat()
@@ -39,7 +42,6 @@ namespace CPT_Game
                 //gose to new game
                 Visible = false;
                 form1.ShowDialog();
-                Close();
             }
         }
 

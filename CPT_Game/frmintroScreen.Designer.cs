@@ -28,45 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIntroScreen));
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btngo = new System.Windows.Forms.Button();
+            this.btnlevel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPlay
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(214, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Play!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.Location = new System.Drawing.Point(214, 362);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(90, 52);
+            this.btnPlay.TabIndex = 0;
+            this.btnPlay.Text = "Play!";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btngo
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(438, 356);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "GO!";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btngo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngo.Location = new System.Drawing.Point(438, 356);
+            this.btngo.Name = "btngo";
+            this.btngo.Size = new System.Drawing.Size(87, 52);
+            this.btngo.TabIndex = 1;
+            this.btngo.Text = "GO!";
+            this.btngo.UseVisualStyleBackColor = true;
+            this.btngo.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnlevel
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 362);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Levels";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnlevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlevel.Location = new System.Drawing.Point(12, 362);
+            this.btnlevel.Name = "btnlevel";
+            this.btnlevel.Size = new System.Drawing.Size(112, 40);
+            this.btnlevel.TabIndex = 2;
+            this.btnlevel.Text = "Levels";
+            this.btnlevel.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -106,9 +107,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnlevel);
+            this.Controls.Add(this.btngo);
+            this.Controls.Add(this.btnPlay);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmIntroScreen";
             this.Text = "introform";
             this.ResumeLayout(false);
@@ -118,9 +120,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btngo;
+        private System.Windows.Forms.Button btnlevel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

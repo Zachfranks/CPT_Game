@@ -14,10 +14,14 @@ namespace CPT_Game
 {
     public partial class frmLevel1_Game : Form
     {
+
+        //sounds players
         private SoundPlayer soundPlayerCoinLevel1;
         private SoundPlayer soundPlayerGhostLevel1;
         private SoundPlayer soundPlayerWinLevel1;
         private SoundPlayer soundPlayerDeathLevel1;
+        private SoundPlayer soundPlayerGameOverLevel1;
+        private SoundPlayer backgrondFXLevel1;
 
         // strat local variables
         bool gouplevel1;
@@ -99,6 +103,7 @@ namespace CPT_Game
 
         private void tmrlevel1_Tick(object sender, EventArgs e)
         {
+
             //shows on the scoere bord
             lblscorelevel1.Text = "Score:" + scorelevel1;
 
@@ -157,6 +162,7 @@ namespace CPT_Game
             //for loop to check walls, ghost and points
             foreach (Control hitBox in Controls)
             {
+                
                 //if the player hits a "wall" or "ghost"
                 if (hitBox is PictureBox && hitBox.Tag == "wallLevel1" || hitBox.Tag == "ghostLevel1")
                 {
@@ -169,19 +175,25 @@ namespace CPT_Game
                         //rest the possion
                         picPacManlevel1.Left = 0;
                         picPacManlevel1.Top = 20;
-
+                       
 
                         //if the player gets hit by a ghost or wall lose a life
                         if (life_Count == 1)
                         {
+                            soundPlayerDeathLevel1 = new SoundPlayer("pacman_death.wav");
+                            soundPlayerDeathLevel1.Play();
                             picLife3Level1.Hide();
                         }
                         else if (life_Count == 2)
                         {
+                            soundPlayerDeathLevel1 = new SoundPlayer("pacman_death.wav");
+                            soundPlayerDeathLevel1.Play();
                             picLife2Level1.Hide();
                         }
                         else if (life_Count == 3)
                         {
+                            soundPlayerGameOverLevel1 = new SoundPlayer("Retro-game-over-sound-effect.wav");
+                            soundPlayerGameOverLevel1.Play();
                             //display game over
                             picLife1Level1.Hide();
                             lblGameOverlevel1.Visible = true;
@@ -234,10 +246,29 @@ namespace CPT_Game
                 {
                     if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
                     {
-                        //if pacMan hit no man land go down
+                        //if pacMan hit no man land go stay in bounds
                         picPacManlevel1.Top += speedlevel1;
                     }
                 }
+                if (hitBox is PictureBox && hitBox.Tag == "noManLandLeftLevel1")
+                    if(((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
+                    {
+                        //if pacMan hit no man land go stay in bounds
+                        picPacManlevel1.Left  += speedlevel1;
+                    }
+
+                if (hitBox is PictureBox && hitBox.Tag == "noManLandRightLevel1")
+                    if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
+                    {
+                        //if pacMan hit no man land go stay in bounds
+                        picPacManlevel1.Left -= speedlevel1;
+                    }
+                if (hitBox is PictureBox && hitBox.Tag == "noManLandDownLevel1")
+                    if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
+                    {
+                        //if pacMan hit no man land go stay in bounds
+                        picPacManlevel1.Top -= speedlevel1;
+                    }
             }
 
             //making the pink ghost move

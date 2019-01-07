@@ -76,6 +76,9 @@
             this.picLife3Level1 = new System.Windows.Forms.PictureBox();
             this.picLife1Level1 = new System.Windows.Forms.PictureBox();
             this.lblLifeLevel1 = new System.Windows.Forms.Label();
+            this.picNoManLandLeftLevel1 = new System.Windows.Forms.PictureBox();
+            this.picNoManLandRightLevel1 = new System.Windows.Forms.PictureBox();
+            this.picNoManLandDownLevel1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPinkGhostlevel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedGhostlevel1)).BeginInit();
@@ -118,6 +121,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLife2Level1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLife3Level1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLife1Level1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNoManLandLeftLevel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNoManLandRightLevel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNoManLandDownLevel1)).BeginInit();
             this.SuspendLayout();
             // 
             // picPinkGhostlevel1
@@ -148,7 +154,7 @@
             // 
             this.picRedGhostlevel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.picRedGhostlevel1.Image = global::CPT_Game.Properties.Resources.red_guy;
-            this.picRedGhostlevel1.Location = new System.Drawing.Point(365, 160);
+            this.picRedGhostlevel1.Location = new System.Drawing.Point(381, 160);
             this.picRedGhostlevel1.Name = "picRedGhostlevel1";
             this.picRedGhostlevel1.Size = new System.Drawing.Size(36, 38);
             this.picRedGhostlevel1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -159,7 +165,7 @@
             // picWall4level1
             // 
             this.picWall4level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall4level1.Location = new System.Drawing.Point(324, 478);
+            this.picWall4level1.Location = new System.Drawing.Point(336, 478);
             this.picWall4level1.Name = "picWall4level1";
             this.picWall4level1.Size = new System.Drawing.Size(30, 150);
             this.picWall4level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +176,7 @@
             // picWall3level1
             // 
             this.picWall3level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall3level1.Location = new System.Drawing.Point(14, 478);
+            this.picWall3level1.Location = new System.Drawing.Point(1, 478);
             this.picWall3level1.Name = "picWall3level1";
             this.picWall3level1.Size = new System.Drawing.Size(30, 150);
             this.picWall3level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +187,7 @@
             // picWall2level1
             // 
             this.picWall2level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall2level1.Location = new System.Drawing.Point(634, 113);
+            this.picWall2level1.Location = new System.Drawing.Point(644, 113);
             this.picWall2level1.Name = "picWall2level1";
             this.picWall2level1.Size = new System.Drawing.Size(30, 150);
             this.picWall2level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +198,7 @@
             // picWall1level1
             // 
             this.picWall1level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall1level1.Location = new System.Drawing.Point(324, 113);
+            this.picWall1level1.Location = new System.Drawing.Point(345, 113);
             this.picWall1level1.Name = "picWall1level1";
             this.picWall1level1.Size = new System.Drawing.Size(30, 150);
             this.picWall1level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -363,7 +369,7 @@
             // picCoin19level1
             // 
             this.picCoin19level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin19level1.Location = new System.Drawing.Point(381, 354);
+            this.picCoin19level1.Location = new System.Drawing.Point(381, 374);
             this.picCoin19level1.Name = "picCoin19level1";
             this.picCoin19level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin19level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -407,7 +413,7 @@
             // picCoin15level1
             // 
             this.picCoin15level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin15level1.Location = new System.Drawing.Point(532, 439);
+            this.picCoin15level1.Location = new System.Drawing.Point(577, 374);
             this.picCoin15level1.Name = "picCoin15level1";
             this.picCoin15level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin15level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -462,7 +468,7 @@
             // picCoin30level1
             // 
             this.picCoin30level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin30level1.Location = new System.Drawing.Point(282, 402);
+            this.picCoin30level1.Location = new System.Drawing.Point(282, 354);
             this.picCoin30level1.Name = "picCoin30level1";
             this.picCoin30level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin30level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -506,7 +512,7 @@
             // picCoin26level1
             // 
             this.picCoin26level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin26level1.Location = new System.Drawing.Point(463, 319);
+            this.picCoin26level1.Location = new System.Drawing.Point(490, 322);
             this.picCoin26level1.Name = "picCoin26level1";
             this.picCoin26level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin26level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -583,7 +589,7 @@
             // 
             this.picLife2Level1.BackColor = System.Drawing.Color.White;
             this.picLife2Level1.Image = ((System.Drawing.Image)(resources.GetObject("picLife2Level1.Image")));
-            this.picLife2Level1.Location = new System.Drawing.Point(567, 4);
+            this.picLife2Level1.Location = new System.Drawing.Point(588, 4);
             this.picLife2Level1.Name = "picLife2Level1";
             this.picLife2Level1.Size = new System.Drawing.Size(40, 40);
             this.picLife2Level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -594,7 +600,7 @@
             // 
             this.picLife3Level1.BackColor = System.Drawing.Color.White;
             this.picLife3Level1.Image = ((System.Drawing.Image)(resources.GetObject("picLife3Level1.Image")));
-            this.picLife3Level1.Location = new System.Drawing.Point(613, 4);
+            this.picLife3Level1.Location = new System.Drawing.Point(634, 4);
             this.picLife3Level1.Name = "picLife3Level1";
             this.picLife3Level1.Size = new System.Drawing.Size(40, 40);
             this.picLife3Level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -605,7 +611,7 @@
             // 
             this.picLife1Level1.BackColor = System.Drawing.Color.White;
             this.picLife1Level1.Image = ((System.Drawing.Image)(resources.GetObject("picLife1Level1.Image")));
-            this.picLife1Level1.Location = new System.Drawing.Point(521, 4);
+            this.picLife1Level1.Location = new System.Drawing.Point(542, 4);
             this.picLife1Level1.Name = "picLife1Level1";
             this.picLife1Level1.Size = new System.Drawing.Size(40, 40);
             this.picLife1Level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -618,11 +624,41 @@
             this.lblLifeLevel1.BackColor = System.Drawing.Color.Black;
             this.lblLifeLevel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLifeLevel1.ForeColor = System.Drawing.Color.White;
-            this.lblLifeLevel1.Location = new System.Drawing.Point(462, 9);
+            this.lblLifeLevel1.Location = new System.Drawing.Point(478, 9);
             this.lblLifeLevel1.Name = "lblLifeLevel1";
-            this.lblLifeLevel1.Size = new System.Drawing.Size(48, 24);
+            this.lblLifeLevel1.Size = new System.Drawing.Size(53, 24);
             this.lblLifeLevel1.TabIndex = 44;
-            this.lblLifeLevel1.Text = "Lifes";
+            this.lblLifeLevel1.Text = "Lives";
+            // 
+            // picNoManLandLeftLevel1
+            // 
+            this.picNoManLandLeftLevel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.picNoManLandLeftLevel1.Location = new System.Drawing.Point(-5, 60);
+            this.picNoManLandLeftLevel1.Name = "picNoManLandLeftLevel1";
+            this.picNoManLandLeftLevel1.Size = new System.Drawing.Size(14, 577);
+            this.picNoManLandLeftLevel1.TabIndex = 45;
+            this.picNoManLandLeftLevel1.TabStop = false;
+            this.picNoManLandLeftLevel1.Tag = "noManLandLeftLevel1";
+            // 
+            // picNoManLandRightLevel1
+            // 
+            this.picNoManLandRightLevel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.picNoManLandRightLevel1.Location = new System.Drawing.Point(667, 60);
+            this.picNoManLandRightLevel1.Name = "picNoManLandRightLevel1";
+            this.picNoManLandRightLevel1.Size = new System.Drawing.Size(14, 577);
+            this.picNoManLandRightLevel1.TabIndex = 46;
+            this.picNoManLandRightLevel1.TabStop = false;
+            this.picNoManLandRightLevel1.Tag = "noManLandRightLevel1";
+            // 
+            // picNoManLandDownLevel1
+            // 
+            this.picNoManLandDownLevel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.picNoManLandDownLevel1.Location = new System.Drawing.Point(1, 627);
+            this.picNoManLandDownLevel1.Name = "picNoManLandDownLevel1";
+            this.picNoManLandDownLevel1.Size = new System.Drawing.Size(679, 10);
+            this.picNoManLandDownLevel1.TabIndex = 47;
+            this.picNoManLandDownLevel1.TabStop = false;
+            this.picNoManLandDownLevel1.Tag = "noManLandDownLevel1";
             // 
             // frmLevel1_Game
             // 
@@ -630,6 +666,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(676, 632);
+            this.Controls.Add(this.picNoManLandDownLevel1);
+            this.Controls.Add(this.picNoManLandRightLevel1);
+            this.Controls.Add(this.picNoManLandLeftLevel1);
             this.Controls.Add(this.lblLifeLevel1);
             this.Controls.Add(this.picLife1Level1);
             this.Controls.Add(this.picLife3Level1);
@@ -639,20 +678,15 @@
             this.Controls.Add(this.picCoin28level1);
             this.Controls.Add(this.picCoin27level1);
             this.Controls.Add(this.picCoin26level1);
-            this.Controls.Add(this.picCoin25level1);
             this.Controls.Add(this.picCoin24level1);
             this.Controls.Add(this.picCoin23level1);
             this.Controls.Add(this.picCoin22level1);
-            this.Controls.Add(this.picCoin21level1);
             this.Controls.Add(this.picCoin20level1);
             this.Controls.Add(this.picCoin19level1);
             this.Controls.Add(this.picCoin18level1);
-            this.Controls.Add(this.picCoin17level1);
-            this.Controls.Add(this.picCoin16level1);
             this.Controls.Add(this.picCoin15level1);
             this.Controls.Add(this.picCoin14level1);
             this.Controls.Add(this.picCoin13level1);
-            this.Controls.Add(this.picCoin12level1);
             this.Controls.Add(this.picCoin11level1);
             this.Controls.Add(this.picCoin10level1);
             this.Controls.Add(this.picCoin9level1);
@@ -662,7 +696,6 @@
             this.Controls.Add(this.picCoin5level1);
             this.Controls.Add(this.picCoin4level1);
             this.Controls.Add(this.picCoin3level1);
-            this.Controls.Add(this.picCoin2level1);
             this.Controls.Add(this.picCoin1level1);
             this.Controls.Add(this.lblGameOverlevel1);
             this.Controls.Add(this.lblscorelevel1);
@@ -675,6 +708,12 @@
             this.Controls.Add(this.picWall1level1);
             this.Controls.Add(this.picPacManlevel1);
             this.Controls.Add(this.picDisplayBarLevel1);
+            this.Controls.Add(this.picCoin25level1);
+            this.Controls.Add(this.picCoin21level1);
+            this.Controls.Add(this.picCoin2level1);
+            this.Controls.Add(this.picCoin17level1);
+            this.Controls.Add(this.picCoin16level1);
+            this.Controls.Add(this.picCoin12level1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLevel1_Game";
             this.Text = "PACMAN Level 1";
@@ -722,6 +761,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLife2Level1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLife3Level1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLife1Level1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNoManLandLeftLevel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNoManLandRightLevel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNoManLandDownLevel1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -775,5 +817,8 @@
         private System.Windows.Forms.PictureBox picLife3Level1;
         private System.Windows.Forms.PictureBox picLife1Level1;
         private System.Windows.Forms.Label lblLifeLevel1;
+        private System.Windows.Forms.PictureBox picNoManLandLeftLevel1;
+        private System.Windows.Forms.PictureBox picNoManLandRightLevel1;
+        private System.Windows.Forms.PictureBox picNoManLandDownLevel1;
     }
 }
