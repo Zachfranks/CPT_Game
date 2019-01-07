@@ -633,9 +633,9 @@
             // picNoManLandLeftLevel1
             // 
             this.picNoManLandLeftLevel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.picNoManLandLeftLevel1.Location = new System.Drawing.Point(-5, 60);
+            this.picNoManLandLeftLevel1.Location = new System.Drawing.Point(-5, 10);
             this.picNoManLandLeftLevel1.Name = "picNoManLandLeftLevel1";
-            this.picNoManLandLeftLevel1.Size = new System.Drawing.Size(14, 577);
+            this.picNoManLandLeftLevel1.Size = new System.Drawing.Size(10, 627);
             this.picNoManLandLeftLevel1.TabIndex = 45;
             this.picNoManLandLeftLevel1.TabStop = false;
             this.picNoManLandLeftLevel1.Tag = "noManLandLeftLevel1";

@@ -83,6 +83,7 @@ namespace CPT_Game
 
         private void KeysIsUplevel1(object sender, KeyEventArgs e)
         {
+            //disable action when you unpress the button
             if (e.KeyCode == Keys.Left)
             {
                 goleftlevel1 = false;
@@ -201,9 +202,19 @@ namespace CPT_Game
                             //pacman cant move
                             picPacManlevel1.Top = speedlevel1 = 0;
                             picPacManlevel1.Left = speedlevel1 = 0;
-
+                            
                             //stop the game
                             tmrlevel1.Stop();
+
+                            MessageBox.Show("try again");
+
+                            using (var form1 = new frmLevel1_Game())
+                            {
+                                //gose to new game
+                                Visible = false;
+                                form1.ShowDialog();
+                                Close();
+                            }
                         }                      
                     }
                 }
@@ -227,6 +238,9 @@ namespace CPT_Game
                         {
                             //stops the game
                             tmrlevel1.Stop();
+
+                            soundPlayerWinLevel1 = new SoundPlayer("Win.wav");
+                            soundPlayerWinLevel1.Play();
 
                             MessageBox.Show ("You Beat Level One!!");
 

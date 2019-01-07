@@ -42,6 +42,7 @@ namespace CPT_Game
                 //gose to new game
                 Visible = false;
                 form1.ShowDialog();
+                Close();
             }
         }
 
@@ -54,6 +55,11 @@ namespace CPT_Game
                 form1.ShowDialog();
                 Close();
             }
+        }
+
+        private void btnlevel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
