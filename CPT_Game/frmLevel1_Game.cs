@@ -107,7 +107,6 @@ namespace CPT_Game
 
         private void tmrlevel1_Tick(object sender, EventArgs e)
         {
-
             //shows on the scoere bord
             lblscorelevel1.Text = "Score:" + scorelevel1;
 
@@ -211,7 +210,7 @@ namespace CPT_Game
 
                             MessageBox.Show("try again");
 
-                            using (var form1 = new frmLevel1_Game())
+                            using (var form1 = new frmGameOver())
                             {
                                 //gose to new game
                                 Visible = false;

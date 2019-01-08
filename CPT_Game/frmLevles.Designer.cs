@@ -30,6 +30,7 @@
         {
             this.lblLevels = new System.Windows.Forms.Label();
             this.btnlevle1 = new System.Windows.Forms.Button();
+            this.btnlevel2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLevels
@@ -56,12 +57,25 @@
             this.btnlevle1.UseVisualStyleBackColor = true;
             this.btnlevle1.Click += new System.EventHandler(this.btnlevle1_Click);
             // 
+            // btnlevel2
+            // 
+            this.btnlevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlevel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnlevel2.Location = new System.Drawing.Point(268, 117);
+            this.btnlevel2.Name = "btnlevel2";
+            this.btnlevel2.Size = new System.Drawing.Size(89, 31);
+            this.btnlevel2.TabIndex = 2;
+            this.btnlevel2.Text = "level2";
+            this.btnlevel2.UseVisualStyleBackColor = true;
+            this.btnlevel2.Click += new System.EventHandler(this.btnlevel2_Click);
+            // 
             // frmLevles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(646, 400);
+            this.Controls.Add(this.btnlevel2);
             this.Controls.Add(this.btnlevle1);
             this.Controls.Add(this.lblLevels);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -76,5 +90,6 @@
 
         private System.Windows.Forms.Label lblLevels;
         private System.Windows.Forms.Button btnlevle1;
+        private System.Windows.Forms.Button btnlevel2;
     }
 }

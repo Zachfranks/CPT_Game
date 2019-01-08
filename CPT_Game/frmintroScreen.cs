@@ -59,7 +59,14 @@ namespace CPT_Game
 
         private void btnlevel_Click(object sender, EventArgs e)
         {
-
+            using (var form1 = new frmLevles())
+            {
+                //gose to how to play
+                Visible = false;
+                form1.ShowDialog();
+                Close();
+            }
+            
         }
     }
 }

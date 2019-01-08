@@ -27,5 +27,16 @@ namespace CPT_Game
                 Close();
             }
         }
+
+        private void btnlevel2_Click(object sender, EventArgs e)
+        {
+            using (var form1 = new frmLevel2_Game())
+            {
+                //gose to new game
+                Visible = false;
+                form1.ShowDialog();
+                Close();
+            }
+        }
     }
 }
