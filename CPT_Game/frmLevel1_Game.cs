@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Threading;
+using WMPLib;
 
 namespace CPT_Game
 {
@@ -21,7 +22,7 @@ namespace CPT_Game
         private SoundPlayer soundPlayerWinLevel1;
         private SoundPlayer soundPlayerDeathLevel1;
         private SoundPlayer soundPlayerGameOverLevel1;
-        private SoundPlayer backgrondFXLevel1;
+        
 
         // strat local variables
         bool gouplevel1;
@@ -29,6 +30,7 @@ namespace CPT_Game
         bool goleftlevel1;
         bool gorightlevel1;
 
+        //pacman speed
         int speedlevel1 = 6;
 
         //ghost 1 and 2 variables
@@ -49,6 +51,7 @@ namespace CPT_Game
         public frmLevel1_Game()
         {
             InitializeComponent();
+
             //makes the game over lable not visible
             lblGameOverlevel1.Visible = false;
         }            
@@ -149,13 +152,13 @@ namespace CPT_Game
 
             //move yellow ghsot
             //if the yellow ghost hits the wall "3" then go backwars 
-            if (picYellowGhostlevel1.Bounds.IntersectsWith(picWall3level1.Bounds))
+            else if (picYellowGhostlevel1.Bounds.IntersectsWith(picWall3level1.Bounds))
             {
                 ghost2level1 = -ghost2level1;
             }
 
             //if the yellow ghost hits the wall "4" then go backwars 
-            if (picYellowGhostlevel1.Bounds.IntersectsWith(picWall4level1.Bounds))
+            else if (picYellowGhostlevel1.Bounds.IntersectsWith(picWall4level1.Bounds))
             {
                 ghost2level1 = -ghost2level1;
             }
@@ -244,7 +247,7 @@ namespace CPT_Game
 
                             MessageBox.Show ("You Beat Level One!!");
 
-                            using (var form1 = new frmIntroScreen())
+                            using (var form1 = new frmGameOver())
                             {
                                 //gose to new game
                                 Visible = false;
@@ -257,13 +260,13 @@ namespace CPT_Game
 
                 //displayBoard
                 if (hitBox is PictureBox && hitBox.Tag == "noManLandTopLevel1")
-                {
                     if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
                     {
                         //if pacMan hit no man land go stay in bounds
                         picPacManlevel1.Top += speedlevel1;
                     }
-                }
+
+                //thes are the bounds
                 if (hitBox is PictureBox && hitBox.Tag == "noManLandLeftLevel1")
                     if(((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel1.Bounds))
                     {
@@ -305,7 +308,12 @@ namespace CPT_Game
             if (picPinkGhostlevel1.Top < 1 || picPinkGhostlevel1.Top + picPinkGhostlevel1.Height > ClientSize.Height - 2 || (picPinkGhostlevel1.Bounds.IntersectsWith(picDisplayBarLevel1.Bounds)))
             {
                 ghost3ylevel1 = -ghost3ylevel1;
-            } 
+            }
+        }
+
+        private void frmLevel1_Game_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

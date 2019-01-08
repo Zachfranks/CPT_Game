@@ -666,6 +666,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(676, 632);
+            this.Controls.Add(this.picRedGhostlevel1);
+            this.Controls.Add(this.picPinkGhostlevel1);
+            this.Controls.Add(this.picYellowGhostlevel1);
             this.Controls.Add(this.picNoManLandDownLevel1);
             this.Controls.Add(this.picNoManLandRightLevel1);
             this.Controls.Add(this.picNoManLandLeftLevel1);
@@ -699,9 +702,6 @@
             this.Controls.Add(this.picCoin1level1);
             this.Controls.Add(this.lblGameOverlevel1);
             this.Controls.Add(this.lblscorelevel1);
-            this.Controls.Add(this.picPinkGhostlevel1);
-            this.Controls.Add(this.picYellowGhostlevel1);
-            this.Controls.Add(this.picRedGhostlevel1);
             this.Controls.Add(this.picWall4level1);
             this.Controls.Add(this.picWall3level1);
             this.Controls.Add(this.picWall2level1);
@@ -717,6 +717,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLevel1_Game";
             this.Text = "PACMAN Level 1";
+            this.Load += new System.EventHandler(this.frmLevel1_Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDownlevel1);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeysIsUplevel1);
             ((System.ComponentModel.ISupportInitialize)(this.picPinkGhostlevel1)).EndInit();

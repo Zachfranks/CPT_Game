@@ -11,3 +11,10 @@ C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmHowToPlay.resou
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmIntroScreen.resources
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmLevel1_Game.resources
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmSplashform.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmLevles.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\bin\Debug\Interop.WMPLib.dll
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\Interop.WMPLib.dll
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.csproj.ResolveComReference.cache
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmGameOver.resources

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Media;
+using WMPLib;
 
 namespace CPT_Game
 {
@@ -26,7 +27,6 @@ namespace CPT_Game
             //this timer waits 50 seconds entil it auto stops the program
             Thread.Sleep(5000);
             splahscreen.Abort();
-
         }
 
         public void splashStrat()
