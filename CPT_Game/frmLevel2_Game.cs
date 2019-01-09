@@ -45,7 +45,7 @@ namespace CPT_Game
         int scorelevel2 = 0;
 
         //lifecount
-        int life_Count = 0;
+        int life_CountLevel2 = 0;
 
         public frmLevel2_Game()
         {
@@ -162,6 +162,51 @@ namespace CPT_Game
                 picYellowGhostlevel2.Image = Properties.Resources.chostlevel2;
             }
 
+            //for loop to check walls, ghost and points
+            foreach (Control hitBox in Controls)
+            {
+                //if the player hits a "wall" or "ghost"
+                if (hitBox is PictureBox && hitBox.Tag == "wallLevel2" || hitBox.Tag == "ghostLevel2")
+                {
+
+                }
+
+                //if player hits a "coin"
+                if (hitBox is PictureBox && hitBox.Tag == "coinLevel2")
+                {
+                    if (((PictureBox)hitBox).Bounds.IntersectsWith(picPacManlevel2.Bounds))
+                    {
+                        //plays the coin sound
+                        soundPlayerCoinLevel2 = new SoundPlayer("pacManCoin.wav");
+                        soundPlayerCoinLevel2.Play();
+
+                        //roemove the coin that was hit
+                        Controls.Remove(hitBox);
+
+                        //adds score
+                        scorelevel2++;
+
+                        if (scorelevel2 == 30)
+                        {
+                            //stops the game
+                            tmrlevel2.Stop();
+
+                            soundPlayerWinLevel2 = new SoundPlayer("Win.wav");
+                            soundPlayerWinLevel2.Play();
+
+                            MessageBox.Show("You Beat Level One!!");
+
+                            using (var form1 = new frmLevles())
+                            {
+                                //gose to new game
+                                Visible = false;
+                                form1.ShowDialog();
+                                Close();
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
