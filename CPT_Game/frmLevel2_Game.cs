@@ -58,25 +58,25 @@ namespace CPT_Game
             {
                 //changes the image for left
                 goleftlevel2 = true;
-                picPacManlevel2.Image = Properties.Resources.Right;
+                picPacManlevel2.Image = Properties.Resources.pikachunringleft;
             }
             if (e.KeyCode == Keys.Right)
             {
                 //changes the image for right
                 gorightlevel2 = true;
-                picPacManlevel2.Image = Properties.Resources.Left;
+                picPacManlevel2.Image = Properties.Resources.pikachunright;
             }
             if (e.KeyCode == Keys.Up)
             {
                 //changes the image for up
                 gouplevel2 = true;
-                picPacManlevel2.Image = Properties.Resources.Up;
+                picPacManlevel2.Image = Properties.Resources.pikachuruingup;
             }
             if (e.KeyCode == Keys.Down)
             {
                 //changes the image for down
                 godownlevel2 = true;
-                picPacManlevel2.Image = Properties.Resources.down;
+                picPacManlevel2.Image = Properties.Resources.pikachunriuingdown;
             }
         }
 
@@ -132,8 +132,35 @@ namespace CPT_Game
             picYellowGhostlevel2.Left += ghost2level2;
 
             //move pink ghost
-    
 
+            if (picPinkGhostlevel2.Bounds.IntersectsWith(picWall1level2.Bounds))
+            {
+                ghost1level2 = -ghost1level2;
+                picPinkGhostlevel2.Image = Properties.Resources.pinkghostlevel2;
+                
+            }
+
+            //if the red ghost hits the wall "2" then go backwars 
+            else if (picPinkGhostlevel2.Bounds.IntersectsWith(picWall2level2.Bounds))
+            {
+                ghost1level2 = -ghost1level2;
+                picPinkGhostlevel2.Image = Properties.Resources.ghostlevel2pink;
+            }
+
+            //move yellow ghsot
+            //if the yellow ghost hits the wall "3" then go backwars 
+            else if (picYellowGhostlevel2.Bounds.IntersectsWith(picWall3level2.Bounds))
+            {
+                ghost2level2 = -ghost2level2;
+                picYellowGhostlevel2.Image = Properties.Resources.rightlevel2;
+            }
+
+            //if the yellow ghost hits the wall "4" then go backwars 
+            else if (picYellowGhostlevel2.Bounds.IntersectsWith(picWall4level2.Bounds))
+            {
+                ghost2level2 = -ghost2level2;
+                picYellowGhostlevel2.Image = Properties.Resources.chostlevel2;
+            }
 
         }
     }

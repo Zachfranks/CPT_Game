@@ -158,5 +158,38 @@
   <ItemGroup>
     <None Include="Resources\original.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brick_Wall_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chostlevel2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghostlevel2pink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkghostlevel2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachunright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachunright1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachunringleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachunriuingdown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachuruingup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chostlevel21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightlevel2.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

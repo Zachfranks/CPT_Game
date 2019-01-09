@@ -246,7 +246,7 @@ namespace CPT_Game
 
                             MessageBox.Show ("You Beat Level One!!");
 
-                            using (var form1 = new frmGameOver())
+                            using (var form1 = new frmLevles())
                             {
                                 //gose to new game
                                 Visible = false;

@@ -31,12 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.tmrlevel2 = new System.Windows.Forms.Timer(this.components);
             this.lblscorelevel2 = new System.Windows.Forms.Label();
+            this.picWall4level2 = new System.Windows.Forms.PictureBox();
+            this.picWall3level2 = new System.Windows.Forms.PictureBox();
+            this.picWall2level2 = new System.Windows.Forms.PictureBox();
+            this.picWall1level2 = new System.Windows.Forms.PictureBox();
+            this.picYellowGhostlevel2 = new System.Windows.Forms.PictureBox();
             this.picPinkGhostlevel2 = new System.Windows.Forms.PictureBox();
             this.picPacManlevel2 = new System.Windows.Forms.PictureBox();
-            this.picYellowGhostlevel2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall4level2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall3level2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall2level2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall1level2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPinkGhostlevel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPacManlevel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel2)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrlevel2
@@ -55,19 +63,69 @@
             this.lblscorelevel2.TabIndex = 1;
             this.lblscorelevel2.Text = "score";
             // 
+            // picWall4level2
+            // 
+            this.picWall4level2.Image = global::CPT_Game.Properties.Resources.Brick_Wall_03;
+            this.picWall4level2.Location = new System.Drawing.Point(1016, 91);
+            this.picWall4level2.Name = "picWall4level2";
+            this.picWall4level2.Size = new System.Drawing.Size(50, 140);
+            this.picWall4level2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall4level2.TabIndex = 7;
+            this.picWall4level2.TabStop = false;
+            // 
+            // picWall3level2
+            // 
+            this.picWall3level2.Image = global::CPT_Game.Properties.Resources.Brick_Wall_03;
+            this.picWall3level2.Location = new System.Drawing.Point(694, 91);
+            this.picWall3level2.Name = "picWall3level2";
+            this.picWall3level2.Size = new System.Drawing.Size(50, 140);
+            this.picWall3level2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall3level2.TabIndex = 6;
+            this.picWall3level2.TabStop = false;
+            // 
+            // picWall2level2
+            // 
+            this.picWall2level2.Image = global::CPT_Game.Properties.Resources.Brick_Wall_03;
+            this.picWall2level2.Location = new System.Drawing.Point(313, 505);
+            this.picWall2level2.Name = "picWall2level2";
+            this.picWall2level2.Size = new System.Drawing.Size(50, 140);
+            this.picWall2level2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall2level2.TabIndex = 5;
+            this.picWall2level2.TabStop = false;
+            // 
+            // picWall1level2
+            // 
+            this.picWall1level2.Image = global::CPT_Game.Properties.Resources.Brick_Wall_03;
+            this.picWall1level2.Location = new System.Drawing.Point(12, 505);
+            this.picWall1level2.Name = "picWall1level2";
+            this.picWall1level2.Size = new System.Drawing.Size(50, 140);
+            this.picWall1level2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall1level2.TabIndex = 4;
+            this.picWall1level2.TabStop = false;
+            // 
+            // picYellowGhostlevel2
+            // 
+            this.picYellowGhostlevel2.Image = global::CPT_Game.Properties.Resources.rightlevel2;
+            this.picYellowGhostlevel2.Location = new System.Drawing.Point(950, 142);
+            this.picYellowGhostlevel2.Name = "picYellowGhostlevel2";
+            this.picYellowGhostlevel2.Size = new System.Drawing.Size(40, 50);
+            this.picYellowGhostlevel2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picYellowGhostlevel2.TabIndex = 3;
+            this.picYellowGhostlevel2.TabStop = false;
+            // 
             // picPinkGhostlevel2
             // 
-            this.picPinkGhostlevel2.Image = global::CPT_Game.Properties.Resources.original;
-            this.picPinkGhostlevel2.Location = new System.Drawing.Point(106, 205);
+            this.picPinkGhostlevel2.Image = global::CPT_Game.Properties.Resources.pinkghostlevel2;
+            this.picPinkGhostlevel2.Location = new System.Drawing.Point(163, 554);
             this.picPinkGhostlevel2.Name = "picPinkGhostlevel2";
-            this.picPinkGhostlevel2.Size = new System.Drawing.Size(45, 50);
+            this.picPinkGhostlevel2.Size = new System.Drawing.Size(40, 50);
             this.picPinkGhostlevel2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPinkGhostlevel2.TabIndex = 2;
             this.picPinkGhostlevel2.TabStop = false;
             // 
             // picPacManlevel2
             // 
-            this.picPacManlevel2.Image = global::CPT_Game.Properties.Resources.Left;
+            this.picPacManlevel2.Image = global::CPT_Game.Properties.Resources.pikachunright;
             this.picPacManlevel2.Location = new System.Drawing.Point(12, 91);
             this.picPacManlevel2.Name = "picPacManlevel2";
             this.picPacManlevel2.Size = new System.Drawing.Size(40, 40);
@@ -75,20 +133,16 @@
             this.picPacManlevel2.TabIndex = 0;
             this.picPacManlevel2.TabStop = false;
             // 
-            // picYellowGhostlevel2
-            // 
-            this.picYellowGhostlevel2.Location = new System.Drawing.Point(267, 192);
-            this.picYellowGhostlevel2.Name = "picYellowGhostlevel2";
-            this.picYellowGhostlevel2.Size = new System.Drawing.Size(100, 50);
-            this.picYellowGhostlevel2.TabIndex = 3;
-            this.picYellowGhostlevel2.TabStop = false;
-            // 
             // frmLevel2_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1200, 657);
+            this.Controls.Add(this.picWall4level2);
+            this.Controls.Add(this.picWall3level2);
+            this.Controls.Add(this.picWall2level2);
+            this.Controls.Add(this.picWall1level2);
             this.Controls.Add(this.picYellowGhostlevel2);
             this.Controls.Add(this.picPinkGhostlevel2);
             this.Controls.Add(this.lblscorelevel2);
@@ -97,9 +151,13 @@
             this.Text = "frmLevel2_Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDownlevel2);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeysIsUplevel2);
+            ((System.ComponentModel.ISupportInitialize)(this.picWall4level2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall3level2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall2level2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall1level2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPinkGhostlevel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPacManlevel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +170,9 @@
         private System.Windows.Forms.Label lblscorelevel2;
         private System.Windows.Forms.PictureBox picPinkGhostlevel2;
         private System.Windows.Forms.PictureBox picYellowGhostlevel2;
+        private System.Windows.Forms.PictureBox picWall1level2;
+        private System.Windows.Forms.PictureBox picWall2level2;
+        private System.Windows.Forms.PictureBox picWall3level2;
+        private System.Windows.Forms.PictureBox picWall4level2;
     }
 }
