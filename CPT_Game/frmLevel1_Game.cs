@@ -208,8 +208,6 @@ namespace CPT_Game
                             //stop the game
                             tmrlevel1.Stop();
 
-                            MessageBox.Show("try again");
-
                             using (var form1 = new frmGameOver())
                             {
                                 //gose to new game

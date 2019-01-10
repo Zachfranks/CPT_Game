@@ -163,6 +163,16 @@ namespace CPT_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap movingGhost {
+            get {
+                object obj = ResourceManager.GetObject("movingGhost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap original {
             get {
                 object obj = ResourceManager.GetObject("original", resourceCulture);
@@ -276,6 +286,17 @@ namespace CPT_Game.Properties {
         internal static System.Drawing.Bitmap Up {
             get {
                 object obj = ResourceManager.GetObject("Up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap USgKopgPm9jPY4YbQin2X7oZs7S8LWDhCfcBC4TeVAm5M4ban2qbokU48AqWFegJYh52KqNLCikjxNnMZYgf3K {
+            get {
+                object obj = ResourceManager.GetObject("USgKopgPm9jPY4YbQin2X7oZs7S8LWDhCfcBC4TeVAm5M4ban2qbokU48AqWFegJYh52KqNLCikjxNnMZ" +
+                        "Ygf3K", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

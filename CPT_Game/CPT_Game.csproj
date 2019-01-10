@@ -191,5 +191,11 @@
   <ItemGroup>
     <None Include="Resources\rightlevel2.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movingGhost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USgKopgPm9jPY4YbQin2X7oZs7S8LWDhCfcBC4TeVAm5M4ban2qbokU48AqWFegJYh52KqNLCikjxNnMZYgf3K.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
