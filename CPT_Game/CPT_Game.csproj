@@ -89,6 +89,7 @@
     <Compile Include="frmSplashform.Designer.cs">
       <DependentUpon>frmSplashform.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bin\Debug\frmLevel2_Game.resx" />
     <EmbeddedResource Include="frmGameOver.resx">
       <DependentUpon>frmGameOver.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,9 +101,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLevel1_Game.resx">
       <DependentUpon>frmLevel1_Game.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLevel2_Game.resx">
-      <DependentUpon>frmLevel2_Game.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLevles.resx">
       <DependentUpon>frmLevles.cs</DependentUpon>
@@ -196,6 +194,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\USgKopgPm9jPY4YbQin2X7oZs7S8LWDhCfcBC4TeVAm5M4ban2qbokU48AqWFegJYh52KqNLCikjxNnMZYgf3K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightlevel21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\280cccb2f0cce72c03ea14f96503936d191899f2_hq.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

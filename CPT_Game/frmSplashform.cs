@@ -34,5 +34,10 @@ namespace CPT_Game
             if (prgStrat.Value == 100)
                 timStrat.Stop();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

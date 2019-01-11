@@ -121,7 +121,7 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picLife2Level1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picLife1Level1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADcAAAA6CAYAAAAURcGYAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAABI5JREFUaEPdmluITVEYxz+XcR2JXAppmkQJL8olt5Q8uSUjlJlCkQgpHj174skl
@@ -171,7 +171,7 @@
         nBwD99S43sULaGG5fbtkbdYbqBgL1FV44SwqEa6Dw0LFSoGKFYDoH3teLbe4SmUEAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="picLife1Level1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picLife2Level1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADcAAAA6CAYAAAAURcGYAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAABI5JREFUaEPdmluITVEYxz+XcR2JXAppmkQJL8olt5Q8uSUjlJlCkQgpHj174skl

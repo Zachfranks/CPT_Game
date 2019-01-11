@@ -63,6 +63,16 @@ namespace CPT_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _280cccb2f0cce72c03ea14f96503936d191899f2_hq {
+            get {
+                object obj = ResourceManager.GetObject("280cccb2f0cce72c03ea14f96503936d191899f2_hq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Brick_Wall_03 {
             get {
                 object obj = ResourceManager.GetObject("Brick_Wall_03", resourceCulture);
@@ -276,6 +286,16 @@ namespace CPT_Game.Properties {
         internal static System.Drawing.Bitmap rightlevel2 {
             get {
                 object obj = ResourceManager.GetObject("rightlevel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rightlevel21 {
+            get {
+                object obj = ResourceManager.GetObject("rightlevel21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

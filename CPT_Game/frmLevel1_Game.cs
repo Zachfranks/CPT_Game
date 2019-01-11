@@ -22,7 +22,6 @@ namespace CPT_Game
         private SoundPlayer soundPlayerWinLevel1;
         private SoundPlayer soundPlayerDeathLevel1;
         private SoundPlayer soundPlayerGameOverLevel1;
-        
 
         // strat local variables
         bool gouplevel1;
