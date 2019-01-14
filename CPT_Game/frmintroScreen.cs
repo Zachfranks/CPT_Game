@@ -19,8 +19,9 @@ namespace CPT_Game
         public frmIntroScreen()
         {   
             InitializeComponent();
-
             //this makes the splah screen apreer befoer he form 
+
+            //got this code off https://www.youtube.com/watch?v=J9azEeLwymU
             Thread splahscreen = new Thread(new ThreadStart(splashStrat));
             splahscreen.Start();
 

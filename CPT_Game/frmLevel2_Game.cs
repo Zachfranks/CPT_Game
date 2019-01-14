@@ -16,7 +16,6 @@ namespace CPT_Game
 
         //sounds players
         private SoundPlayer soundPlayerCoinLevel2;
-        private SoundPlayer soundPlayerGhostLevel2;
         private SoundPlayer soundPlayerWinLevel2;
         private SoundPlayer soundPlayerDeathLevel2;
         private SoundPlayer soundPlayerGameOverLevel2;

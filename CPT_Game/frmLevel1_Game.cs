@@ -18,7 +18,6 @@ namespace CPT_Game
 
         //sounds players
         private SoundPlayer soundPlayerCoinLevel1;
-        private SoundPlayer soundPlayerGhostLevel1;
         private SoundPlayer soundPlayerWinLevel1;
         private SoundPlayer soundPlayerDeathLevel1;
         private SoundPlayer soundPlayerGameOverLevel1;
@@ -188,14 +187,17 @@ namespace CPT_Game
                         }
                         else if (life_Count == 2)
                         {
+                            //plasys suond when you die
                             soundPlayerDeathLevel1 = new SoundPlayer("pacman_death.wav");
                             soundPlayerDeathLevel1.Play();
                             picLife2Level1.Hide();
                         }
                         else if (life_Count == 3)
                         {
+                            //plays sond when you die
                             soundPlayerGameOverLevel1 = new SoundPlayer("Retro-game-over-sound-effect.wav");
                             soundPlayerGameOverLevel1.Play();
+
                             //display game over
                             picLife1Level1.Hide();
                             lblGameOverlevel1.Visible = true;

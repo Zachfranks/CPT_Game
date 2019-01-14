@@ -102,6 +102,9 @@
     <EmbeddedResource Include="frmLevel1_Game.resx">
       <DependentUpon>frmLevel1_Game.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLevel2_Game.resx">
+      <DependentUpon>frmLevel2_Game.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLevles.resx">
       <DependentUpon>frmLevles.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +203,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\280cccb2f0cce72c03ea14f96503936d191899f2_hq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\AGem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coinz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coinsZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coinsZ1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

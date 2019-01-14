@@ -73,6 +73,26 @@ namespace CPT_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AGem {
+            get {
+                object obj = ResourceManager.GetObject("AGem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AGem1 {
+            get {
+                object obj = ResourceManager.GetObject("AGem1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Brick_Wall_03 {
             get {
                 object obj = ResourceManager.GetObject("Brick_Wall_03", resourceCulture);
@@ -123,9 +143,39 @@ namespace CPT_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coinsZ {
+            get {
+                object obj = ResourceManager.GetObject("coinsZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coinsZ1 {
+            get {
+                object obj = ResourceManager.GetObject("coinsZ1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coint2 {
             get {
                 object obj = ResourceManager.GetObject("coint2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coinz {
+            get {
+                object obj = ResourceManager.GetObject("coinz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

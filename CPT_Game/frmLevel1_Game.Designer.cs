@@ -34,6 +34,10 @@
             this.lblGameOverlevel1 = new System.Windows.Forms.Label();
             this.tmrlevel1 = new System.Windows.Forms.Timer(this.components);
             this.lblLifeLevel1 = new System.Windows.Forms.Label();
+            this.picWall4level1 = new System.Windows.Forms.PictureBox();
+            this.picWall3level1 = new System.Windows.Forms.PictureBox();
+            this.picWall2level1 = new System.Windows.Forms.PictureBox();
+            this.picWall1level1 = new System.Windows.Forms.PictureBox();
             this.picRedGhostlevel1 = new System.Windows.Forms.PictureBox();
             this.picPinkGhostlevel1 = new System.Windows.Forms.PictureBox();
             this.picYellowGhostlevel1 = new System.Windows.Forms.PictureBox();
@@ -67,10 +71,6 @@
             this.picCoin4level1 = new System.Windows.Forms.PictureBox();
             this.picCoin3level1 = new System.Windows.Forms.PictureBox();
             this.picCoin1level1 = new System.Windows.Forms.PictureBox();
-            this.picWall4level1 = new System.Windows.Forms.PictureBox();
-            this.picWall3level1 = new System.Windows.Forms.PictureBox();
-            this.picWall2level1 = new System.Windows.Forms.PictureBox();
-            this.picWall1level1 = new System.Windows.Forms.PictureBox();
             this.picPacManlevel1 = new System.Windows.Forms.PictureBox();
             this.picDisplayBarLevel1 = new System.Windows.Forms.PictureBox();
             this.picCoin25level1 = new System.Windows.Forms.PictureBox();
@@ -79,6 +79,10 @@
             this.picCoin17level1 = new System.Windows.Forms.PictureBox();
             this.picCoin16level1 = new System.Windows.Forms.PictureBox();
             this.picCoin12level1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall4level1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall3level1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall2level1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall1level1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedGhostlevel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPinkGhostlevel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel1)).BeginInit();
@@ -112,10 +116,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCoin4level1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin3level1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin1level1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall4level1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall3level1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall2level1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall1level1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPacManlevel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDisplayBarLevel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin25level1)).BeginInit();
@@ -166,6 +166,50 @@
             this.lblLifeLevel1.Size = new System.Drawing.Size(53, 24);
             this.lblLifeLevel1.TabIndex = 44;
             this.lblLifeLevel1.Text = "Lives";
+            // 
+            // picWall4level1
+            // 
+            this.picWall4level1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.picWall4level1.Location = new System.Drawing.Point(644, 478);
+            this.picWall4level1.Name = "picWall4level1";
+            this.picWall4level1.Size = new System.Drawing.Size(30, 150);
+            this.picWall4level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall4level1.TabIndex = 4;
+            this.picWall4level1.TabStop = false;
+            this.picWall4level1.Tag = "wallLevel1";
+            // 
+            // picWall3level1
+            // 
+            this.picWall3level1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.picWall3level1.Location = new System.Drawing.Point(371, 478);
+            this.picWall3level1.Name = "picWall3level1";
+            this.picWall3level1.Size = new System.Drawing.Size(30, 150);
+            this.picWall3level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall3level1.TabIndex = 3;
+            this.picWall3level1.TabStop = false;
+            this.picWall3level1.Tag = "wallLevel1";
+            // 
+            // picWall2level1
+            // 
+            this.picWall2level1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.picWall2level1.Location = new System.Drawing.Point(644, 66);
+            this.picWall2level1.Name = "picWall2level1";
+            this.picWall2level1.Size = new System.Drawing.Size(30, 150);
+            this.picWall2level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall2level1.TabIndex = 2;
+            this.picWall2level1.TabStop = false;
+            this.picWall2level1.Tag = "wallLevel1";
+            // 
+            // picWall1level1
+            // 
+            this.picWall1level1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.picWall1level1.Location = new System.Drawing.Point(345, 66);
+            this.picWall1level1.Name = "picWall1level1";
+            this.picWall1level1.Size = new System.Drawing.Size(30, 150);
+            this.picWall1level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWall1level1.TabIndex = 1;
+            this.picWall1level1.TabStop = false;
+            this.picWall1level1.Tag = "wallLevel1";
             // 
             // picRedGhostlevel1
             // 
@@ -268,7 +312,7 @@
             // 
             // picCoin30level1
             // 
-            this.picCoin30level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin30level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin30level1.Location = new System.Drawing.Point(282, 354);
             this.picCoin30level1.Name = "picCoin30level1";
             this.picCoin30level1.Size = new System.Drawing.Size(20, 20);
@@ -279,7 +323,7 @@
             // 
             // picCoin29level1
             // 
-            this.picCoin29level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin29level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin29level1.Location = new System.Drawing.Point(634, 402);
             this.picCoin29level1.Name = "picCoin29level1";
             this.picCoin29level1.Size = new System.Drawing.Size(20, 20);
@@ -290,7 +334,7 @@
             // 
             // picCoin28level1
             // 
-            this.picCoin28level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin28level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin28level1.Location = new System.Drawing.Point(532, 493);
             this.picCoin28level1.Name = "picCoin28level1";
             this.picCoin28level1.Size = new System.Drawing.Size(20, 20);
@@ -301,7 +345,7 @@
             // 
             // picCoin27level1
             // 
-            this.picCoin27level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin27level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin27level1.Location = new System.Drawing.Point(430, 592);
             this.picCoin27level1.Name = "picCoin27level1";
             this.picCoin27level1.Size = new System.Drawing.Size(20, 20);
@@ -312,7 +356,7 @@
             // 
             // picCoin26level1
             // 
-            this.picCoin26level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin26level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin26level1.Location = new System.Drawing.Point(381, 291);
             this.picCoin26level1.Name = "picCoin26level1";
             this.picCoin26level1.Size = new System.Drawing.Size(20, 20);
@@ -323,8 +367,8 @@
             // 
             // picCoin24level1
             // 
-            this.picCoin24level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin24level1.Location = new System.Drawing.Point(174, 608);
+            this.picCoin24level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
+            this.picCoin24level1.Location = new System.Drawing.Point(41, 493);
             this.picCoin24level1.Name = "picCoin24level1";
             this.picCoin24level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin24level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -334,7 +378,7 @@
             // 
             // picCoin23level1
             // 
-            this.picCoin23level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin23level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin23level1.Location = new System.Drawing.Point(577, 600);
             this.picCoin23level1.Name = "picCoin23level1";
             this.picCoin23level1.Size = new System.Drawing.Size(20, 20);
@@ -345,7 +389,7 @@
             // 
             // picCoin22level1
             // 
-            this.picCoin22level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin22level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin22level1.Location = new System.Drawing.Point(95, 608);
             this.picCoin22level1.Name = "picCoin22level1";
             this.picCoin22level1.Size = new System.Drawing.Size(20, 20);
@@ -356,7 +400,7 @@
             // 
             // picCoin20level1
             // 
-            this.picCoin20level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin20level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin20level1.Location = new System.Drawing.Point(577, 243);
             this.picCoin20level1.Name = "picCoin20level1";
             this.picCoin20level1.Size = new System.Drawing.Size(20, 20);
@@ -367,7 +411,7 @@
             // 
             // picCoin19level1
             // 
-            this.picCoin19level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin19level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin19level1.Location = new System.Drawing.Point(381, 374);
             this.picCoin19level1.Name = "picCoin19level1";
             this.picCoin19level1.Size = new System.Drawing.Size(20, 20);
@@ -378,7 +422,7 @@
             // 
             // picCoin18level1
             // 
-            this.picCoin18level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin18level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin18level1.Location = new System.Drawing.Point(490, 243);
             this.picCoin18level1.Name = "picCoin18level1";
             this.picCoin18level1.Size = new System.Drawing.Size(20, 20);
@@ -389,7 +433,7 @@
             // 
             // picCoin15level1
             // 
-            this.picCoin15level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin15level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin15level1.Location = new System.Drawing.Point(577, 374);
             this.picCoin15level1.Name = "picCoin15level1";
             this.picCoin15level1.Size = new System.Drawing.Size(20, 20);
@@ -400,7 +444,7 @@
             // 
             // picCoin14level1
             // 
-            this.picCoin14level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin14level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin14level1.Location = new System.Drawing.Point(45, 209);
             this.picCoin14level1.Name = "picCoin14level1";
             this.picCoin14level1.Size = new System.Drawing.Size(20, 20);
@@ -411,7 +455,7 @@
             // 
             // picCoin13level1
             // 
-            this.picCoin13level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin13level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin13level1.Location = new System.Drawing.Point(490, 113);
             this.picCoin13level1.Name = "picCoin13level1";
             this.picCoin13level1.Size = new System.Drawing.Size(20, 20);
@@ -422,7 +466,7 @@
             // 
             // picCoin11level1
             // 
-            this.picCoin11level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin11level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin11level1.Location = new System.Drawing.Point(409, 113);
             this.picCoin11level1.Name = "picCoin11level1";
             this.picCoin11level1.Size = new System.Drawing.Size(20, 20);
@@ -433,7 +477,7 @@
             // 
             // picCoin10level1
             // 
-            this.picCoin10level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin10level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin10level1.Location = new System.Drawing.Point(447, 424);
             this.picCoin10level1.Name = "picCoin10level1";
             this.picCoin10level1.Size = new System.Drawing.Size(20, 20);
@@ -444,7 +488,7 @@
             // 
             // picCoin9level1
             // 
-            this.picCoin9level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin9level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin9level1.Location = new System.Drawing.Point(158, 268);
             this.picCoin9level1.Name = "picCoin9level1";
             this.picCoin9level1.Size = new System.Drawing.Size(20, 20);
@@ -455,7 +499,7 @@
             // 
             // picCoin8level1
             // 
-            this.picCoin8level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin8level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin8level1.Location = new System.Drawing.Point(200, 160);
             this.picCoin8level1.Name = "picCoin8level1";
             this.picCoin8level1.Size = new System.Drawing.Size(20, 20);
@@ -466,7 +510,7 @@
             // 
             // picCoin7level1
             // 
-            this.picCoin7level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin7level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin7level1.Location = new System.Drawing.Point(282, 93);
             this.picCoin7level1.Name = "picCoin7level1";
             this.picCoin7level1.Size = new System.Drawing.Size(20, 20);
@@ -477,7 +521,7 @@
             // 
             // picCoin6level1
             // 
-            this.picCoin6level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin6level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin6level1.Location = new System.Drawing.Point(474, 545);
             this.picCoin6level1.Name = "picCoin6level1";
             this.picCoin6level1.Size = new System.Drawing.Size(20, 20);
@@ -488,7 +532,7 @@
             // 
             // picCoin5level1
             // 
-            this.picCoin5level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin5level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin5level1.Location = new System.Drawing.Point(45, 402);
             this.picCoin5level1.Name = "picCoin5level1";
             this.picCoin5level1.Size = new System.Drawing.Size(20, 20);
@@ -499,7 +543,7 @@
             // 
             // picCoin4level1
             // 
-            this.picCoin4level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin4level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin4level1.Location = new System.Drawing.Point(174, 478);
             this.picCoin4level1.Name = "picCoin4level1";
             this.picCoin4level1.Size = new System.Drawing.Size(20, 20);
@@ -510,7 +554,7 @@
             // 
             // picCoin3level1
             // 
-            this.picCoin3level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin3level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin3level1.Location = new System.Drawing.Point(188, 402);
             this.picCoin3level1.Name = "picCoin3level1";
             this.picCoin3level1.Size = new System.Drawing.Size(20, 20);
@@ -521,7 +565,7 @@
             // 
             // picCoin1level1
             // 
-            this.picCoin1level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin1level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin1level1.Location = new System.Drawing.Point(282, 268);
             this.picCoin1level1.Name = "picCoin1level1";
             this.picCoin1level1.Size = new System.Drawing.Size(20, 20);
@@ -529,50 +573,6 @@
             this.picCoin1level1.TabIndex = 10;
             this.picCoin1level1.TabStop = false;
             this.picCoin1level1.Tag = "coinLevel1";
-            // 
-            // picWall4level1
-            // 
-            this.picWall4level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall4level1.Location = new System.Drawing.Point(631, 478);
-            this.picWall4level1.Name = "picWall4level1";
-            this.picWall4level1.Size = new System.Drawing.Size(30, 150);
-            this.picWall4level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picWall4level1.TabIndex = 4;
-            this.picWall4level1.TabStop = false;
-            this.picWall4level1.Tag = "wallLevel1";
-            // 
-            // picWall3level1
-            // 
-            this.picWall3level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall3level1.Location = new System.Drawing.Point(371, 478);
-            this.picWall3level1.Name = "picWall3level1";
-            this.picWall3level1.Size = new System.Drawing.Size(30, 150);
-            this.picWall3level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picWall3level1.TabIndex = 3;
-            this.picWall3level1.TabStop = false;
-            this.picWall3level1.Tag = "wallLevel1";
-            // 
-            // picWall2level1
-            // 
-            this.picWall2level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall2level1.Location = new System.Drawing.Point(644, 66);
-            this.picWall2level1.Name = "picWall2level1";
-            this.picWall2level1.Size = new System.Drawing.Size(30, 150);
-            this.picWall2level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picWall2level1.TabIndex = 2;
-            this.picWall2level1.TabStop = false;
-            this.picWall2level1.Tag = "wallLevel1";
-            // 
-            // picWall1level1
-            // 
-            this.picWall1level1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picWall1level1.Location = new System.Drawing.Point(345, 66);
-            this.picWall1level1.Name = "picWall1level1";
-            this.picWall1level1.Size = new System.Drawing.Size(30, 150);
-            this.picWall1level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picWall1level1.TabIndex = 1;
-            this.picWall1level1.TabStop = false;
-            this.picWall1level1.Tag = "wallLevel1";
             // 
             // picPacManlevel1
             // 
@@ -596,7 +596,7 @@
             // 
             // picCoin25level1
             // 
-            this.picCoin25level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin25level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin25level1.Location = new System.Drawing.Point(256, 545);
             this.picCoin25level1.Name = "picCoin25level1";
             this.picCoin25level1.Size = new System.Drawing.Size(20, 20);
@@ -607,8 +607,8 @@
             // 
             // picCoin21level1
             // 
-            this.picCoin21level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin21level1.Location = new System.Drawing.Point(95, 545);
+            this.picCoin21level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
+            this.picCoin21level1.Location = new System.Drawing.Point(482, 334);
             this.picCoin21level1.Name = "picCoin21level1";
             this.picCoin21level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin21level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -618,8 +618,8 @@
             // 
             // picCoin2level1
             // 
-            this.picCoin2level1.Image = global::CPT_Game.Properties.Resources.cccc;
-            this.picCoin2level1.Location = new System.Drawing.Point(174, 545);
+            this.picCoin2level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
+            this.picCoin2level1.Location = new System.Drawing.Point(95, 316);
             this.picCoin2level1.Name = "picCoin2level1";
             this.picCoin2level1.Size = new System.Drawing.Size(20, 20);
             this.picCoin2level1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -629,7 +629,7 @@
             // 
             // picCoin17level1
             // 
-            this.picCoin17level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin17level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin17level1.Location = new System.Drawing.Point(490, 177);
             this.picCoin17level1.Name = "picCoin17level1";
             this.picCoin17level1.Size = new System.Drawing.Size(20, 20);
@@ -640,7 +640,7 @@
             // 
             // picCoin16level1
             // 
-            this.picCoin16level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin16level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin16level1.Location = new System.Drawing.Point(577, 177);
             this.picCoin16level1.Name = "picCoin16level1";
             this.picCoin16level1.Size = new System.Drawing.Size(20, 20);
@@ -651,7 +651,7 @@
             // 
             // picCoin12level1
             // 
-            this.picCoin12level1.Image = global::CPT_Game.Properties.Resources.cccc;
+            this.picCoin12level1.Image = global::CPT_Game.Properties.Resources.coinsZ;
             this.picCoin12level1.Location = new System.Drawing.Point(409, 177);
             this.picCoin12level1.Name = "picCoin12level1";
             this.picCoin12level1.Size = new System.Drawing.Size(20, 20);
@@ -666,6 +666,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(676, 632);
+            this.Controls.Add(this.picWall4level1);
+            this.Controls.Add(this.picWall3level1);
+            this.Controls.Add(this.picWall2level1);
+            this.Controls.Add(this.picWall1level1);
             this.Controls.Add(this.picRedGhostlevel1);
             this.Controls.Add(this.picPinkGhostlevel1);
             this.Controls.Add(this.picYellowGhostlevel1);
@@ -702,10 +706,6 @@
             this.Controls.Add(this.picCoin1level1);
             this.Controls.Add(this.lblGameOverlevel1);
             this.Controls.Add(this.lblscorelevel1);
-            this.Controls.Add(this.picWall4level1);
-            this.Controls.Add(this.picWall3level1);
-            this.Controls.Add(this.picWall2level1);
-            this.Controls.Add(this.picWall1level1);
             this.Controls.Add(this.picPacManlevel1);
             this.Controls.Add(this.picDisplayBarLevel1);
             this.Controls.Add(this.picCoin25level1);
@@ -720,6 +720,10 @@
             this.Load += new System.EventHandler(this.frmLevel1_Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDownlevel1);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeysIsUplevel1);
+            ((System.ComponentModel.ISupportInitialize)(this.picWall4level1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall3level1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall2level1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWall1level1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedGhostlevel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPinkGhostlevel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picYellowGhostlevel1)).EndInit();
@@ -753,10 +757,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCoin4level1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin3level1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin1level1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall4level1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall3level1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall2level1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picWall1level1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPacManlevel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDisplayBarLevel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin25level1)).EndInit();
