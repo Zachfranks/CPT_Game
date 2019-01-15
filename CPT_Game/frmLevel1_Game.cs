@@ -45,8 +45,11 @@ namespace CPT_Game
         //lifecount
         int life_Count = 0;
 
+        //global score
+        public static int totalscorelevel1 = 0;
 
-        public frmLevel1_Game()
+
+        public frmLevel1_Game(int score)
         {
             InitializeComponent();
 
@@ -245,7 +248,7 @@ namespace CPT_Game
 
                             MessageBox.Show ("You Beat Level One!!");
 
-                            using (var form1 = new frmLevles())
+                            using (var form1 = new frmLevles(scorelevel1))
                             {
                                 //gose to new game
                                 Visible = false;
@@ -253,6 +256,7 @@ namespace CPT_Game
                                 Close();
                             }
                         }
+                        totalscorelevel1 = scorelevel1;
                     }
                 }
 

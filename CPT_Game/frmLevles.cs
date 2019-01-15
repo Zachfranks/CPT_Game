@@ -12,14 +12,15 @@ namespace CPT_Game
 {
     public partial class frmLevles : Form
     {
-        public frmLevles()
+        int score;
+        public frmLevles(int scoreFromPrevLvl)
         {
             InitializeComponent();
         }
 
         private void btnlevle1_Click(object sender, EventArgs e)
         {
-            using (var form1 = new frmLevel1_Game())
+            using (var form1 = new frmLevel1_Game(score))
             {
                 //gose to new game
                 Visible = false;
@@ -30,7 +31,7 @@ namespace CPT_Game
 
         private void btnlevel2_Click(object sender, EventArgs e)
         {
-            using (var form1 = new frmLevel2_Game())
+            using (var form1 = new frmLevel2_Game(score))
             {
                 //gose to new game
                 Visible = false;

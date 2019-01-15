@@ -15,7 +15,7 @@ namespace CPT_Game
 {
     public partial class frmIntroScreen : Form
     {
-
+        int score = 0;
         public frmIntroScreen()
         {   
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace CPT_Game
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var form1 = new frmLevel1_Game())
+            using (var form1 = new frmLevel1_Game(score))
             {
                 //gose to new game
                 Visible = false;
@@ -60,7 +60,7 @@ namespace CPT_Game
 
         private void btnlevel_Click(object sender, EventArgs e)
         {
-            using (var form1 = new frmLevles())
+            using (var form1 = new frmLevles(score))
             {
                 //gose to how to play
                 Visible = false;

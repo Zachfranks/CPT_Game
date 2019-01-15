@@ -12,6 +12,8 @@ namespace CPT_Game
 {
     public partial class frmGameOver : Form
     {
+        int score = 0;
+
         public frmGameOver()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace CPT_Game
 
         private void btnlevels_Click(object sender, EventArgs e)
         {
-            using (var form1 = new frmLevles())
+            using (var form1 = new frmLevles(score))
             {
                 //gose to new game
                 Visible = false;
@@ -27,5 +29,7 @@ namespace CPT_Game
                 Close();
             }
         }
+
+        
     }
 }

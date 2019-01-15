@@ -20,16 +20,17 @@ namespace CPT_Game
         private SoundPlayer soundPlayerDeathLevel2;
         private SoundPlayer soundPlayerGameOverLevel2;
 
-
+        int totalscorelevel1 = frmLevel1_Game.totalscorelevel1;
 
         // strat local variables
         bool gouplevel2;
         bool godownlevel2;
         bool goleftlevel2;
         bool gorightlevel2;
+        int score;
 
         //pacman speed
-        int speedlevel2 = 6;
+        int speedlevel2 = 8;
 
         //ghost 1,2,3 and 4 variables
         int ghost1level2 = 6;
@@ -46,7 +47,7 @@ namespace CPT_Game
         //lifecount
         int life_CountLevel2 = 0;
 
-        public frmLevel2_Game()
+        public frmLevel2_Game(int scoreFromLevel1)
         {
             InitializeComponent();
         }
@@ -188,23 +189,26 @@ namespace CPT_Game
                         life_CountLevel2++;
                         //rest the possion
                         picPacManlevel2.Left = 0;
-                        picPacManlevel2.Top = 20;
+                        picPacManlevel2.Top = 15;
 
                         if (life_CountLevel2 == 1)
                         {
                             soundPlayerDeathLevel2 = new SoundPlayer("pacman_death.wav");
                             soundPlayerDeathLevel2.Play();
+                            picLife1Level2.Hide();
                         }
                         else if (life_CountLevel2 == 2)
                         {
                             soundPlayerDeathLevel2 = new SoundPlayer("pacman_death.wav");
-                            soundPlayerDeathLevel2.Play();                           
+                            soundPlayerDeathLevel2.Play();
+                            picLife2Level2.Hide();
                         }
                         else if (life_CountLevel2 == 3)
                         {
                             soundPlayerGameOverLevel2 = new SoundPlayer("Retro-game-over-sound-effect.wav");
                             soundPlayerGameOverLevel2.Play();
                             //display game over
+                            picLife3Level2.Hide();
 
                             //pacman cant move
                             picPacManlevel2.Top = speedlevel2 = 0;
@@ -249,7 +253,7 @@ namespace CPT_Game
 
                             MessageBox.Show("You Beat Level One!!");
 
-                            using (var form1 = new frmLevles())
+                            using (var form1 = new frmLevles(scorelevel2))
                             {
                                 //gose to new game
                                 Visible = false;
@@ -257,6 +261,7 @@ namespace CPT_Game
                                 Close();
                             }
                         }
+                        totalscorelevel1 = scorelevel2;
                     }
                 }
 

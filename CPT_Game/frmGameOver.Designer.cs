@@ -52,6 +52,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(836, 441);
             this.Controls.Add(this.btnlevels);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGameOver";
             this.Text = "GameOver";
             this.ResumeLayout(false);
