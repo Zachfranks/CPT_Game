@@ -39,7 +39,7 @@
             this.lblLevels.BackColor = System.Drawing.Color.Black;
             this.lblLevels.Font = new System.Drawing.Font("Stencil Std", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevels.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblLevels.Location = new System.Drawing.Point(237, 25);
+            this.lblLevels.Location = new System.Drawing.Point(146, 38);
             this.lblLevels.Name = "lblLevels";
             this.lblLevels.Size = new System.Drawing.Size(153, 46);
             this.lblLevels.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             this.btnlevle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlevle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnlevle1.Location = new System.Drawing.Point(23, 117);
+            this.btnlevle1.Location = new System.Drawing.Point(22, 142);
             this.btnlevle1.Name = "btnlevle1";
             this.btnlevle1.Size = new System.Drawing.Size(89, 31);
             this.btnlevle1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.btnlevel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlevel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnlevel2.Location = new System.Drawing.Point(268, 117);
+            this.btnlevel2.Location = new System.Drawing.Point(324, 142);
             this.btnlevel2.Name = "btnlevel2";
             this.btnlevel2.Size = new System.Drawing.Size(89, 31);
             this.btnlevel2.TabIndex = 2;
@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(646, 400);
+            this.ClientSize = new System.Drawing.Size(442, 267);
             this.Controls.Add(this.btnlevel2);
             this.Controls.Add(this.btnlevle1);
             this.Controls.Add(this.lblLevels);
