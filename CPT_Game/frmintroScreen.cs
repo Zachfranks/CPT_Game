@@ -28,6 +28,9 @@ namespace CPT_Game
             //this timer waits 50 seconds entil it auto stops the program
             Thread.Sleep(5000);
             splahscreen.Abort();
+
+            label3.Hide();
+            btngo.Hide();
         }
 
         public void splashStrat()
