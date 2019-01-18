@@ -33,13 +33,13 @@ namespace CPT_Game
         int speedlevel2 = 8;
 
         //ghost 1,2,3 and 4 variables
-        int ghost1level2 = 9;
+        int ghost1level2 = 7;
         int ghost2level2 = 6;
-        int ghost3level2 = 9;
+        int ghost3level2 = 7;
 
         //ghost 5
-        int ghost5ylevel2 = 9;
-        int ghost5xlevel2 = 11;
+        int ghost5ylevel2 = 8;
+        int ghost5xlevel2 = 8;
 
         //score borad
         int scorelevel2 = 0;
@@ -251,9 +251,7 @@ namespace CPT_Game
                             soundPlayerWinLevel2 = new SoundPlayer("Win.wav");
                             soundPlayerWinLevel2.Play();
 
-                            MessageBox.Show("You Beat Level One!!");
-
-                            using (var form1 = new frmLevles(scorelevel2))
+                            using (var form1 = new frmwin())
                             {
                                 //gose to new game
                                 Visible = false;

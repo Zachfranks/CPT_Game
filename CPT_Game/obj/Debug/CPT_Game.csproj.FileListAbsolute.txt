@@ -20,3 +20,4 @@ C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.csproj.ResolveComR
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmGameOver.resources
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.bin.Debug.frmLevel2_Game.resources
 C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmLevel2_Game.resources
+C:\Users\s436432\Desktop\CPT_Game\CPT_Game\obj\Debug\CPT_Game.frmwin.resources

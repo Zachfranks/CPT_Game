@@ -89,6 +89,12 @@
     <Compile Include="frmSplashform.Designer.cs">
       <DependentUpon>frmSplashform.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmwin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmwin.Designer.cs">
+      <DependentUpon>frmwin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bin\Debug\frmLevel2_Game.resx" />
     <EmbeddedResource Include="frmGameOver.resx">
       <DependentUpon>frmGameOver.cs</DependentUpon>
@@ -120,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="frmSplashform.resx">
       <DependentUpon>frmSplashform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmwin.resx">
+      <DependentUpon>frmwin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

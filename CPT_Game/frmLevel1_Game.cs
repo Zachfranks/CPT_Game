@@ -32,12 +32,12 @@ namespace CPT_Game
         int speedlevel1 = 6;
 
         //ghost 1 and 2 variables
-        int ghost1level1 = 10;
+        int ghost1level1 = 5;
         int ghost2level1 = 6;
 
         //ghost 3 
-        int ghost3ylevel1 = 9;
-        int ghost3xlevel1 = 9;
+        int ghost3ylevel1 = 7;
+        int ghost3xlevel1 = 6;
 
         //score borad
         int scorelevel1 = 0;
